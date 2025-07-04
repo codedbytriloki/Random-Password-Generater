@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <div class="container">
+    <div class="password-container">
+      <div class="input-build">
+        <input type="text" name="" id="inputBox" readonly>
+        <button id="copy"><i class="fa-solid fa-copy" id="copy-btn"></i></button>
+      </div>
+      <div class="inciude-character">
+        <div class="box-content">
+          <label for="">Password Length</label>
+          <input type="number" id="length" value="4" min="2" max="18">
+        </div>
+        <div class="box-content">
+          <label for="">UpperCase</label>
+          <input type="checkbox" id="uppercase">
+        </div>
+        <div class="box-content">
+          <label for="">LowerCase</label>
+          <input type="checkbox" id="lowercase">
+        </div>
+        <div class="box-content">
+          <label for="">Number</label>
+          <input type="checkbox" id="number">
+        </div>
+        <div class="box-content">
+          <label for="">Special Symbol</label>
+          <input type="checkbox" id="symbol">
+        </div>
+      </div>
+      <div class="create-password">
+        <button type="button" id="create-password">Random Password</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
